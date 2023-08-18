@@ -13,7 +13,7 @@ while True:
 		data = int(str(ser.readline().decode('ascii')).replace('\r\n', '').replace("'", ''))
 		print(f'Расстояние до объекта: {data}см')
 		if data < 80:
-			engine.Speak('Стой падла, расстреляю')
+			engine.Speak('Стой, падла, расстреляю')
 			s(2)
 		data = 100
 	except:
